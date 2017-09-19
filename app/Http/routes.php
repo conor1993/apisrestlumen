@@ -16,17 +16,8 @@ $app->get('/', function() use ($app) {
 });
 
 
-$app->get('api/v1/book','App\Http\Controllers\BookController@index');
-
-$app->get('api/v1/book/{id}','App\Http\Controllers\BookController@getbook');
-
-$app->post('api/v1/books/','App\Http\Controllers\BookController@createBook');
-
-$app->put('api/v1/book/{id}','App\Http\Controllers\BookController@updateBook');
-
-$app->delete('api/v1/book/{id}','App\Http\Controllers\BookController@deleteBook');
 
 
 
-$app->get('api/v1/uvicaciones','App\Http\Controllers\UvicacionesController@index');
-$app->post('api/v1/uvicacionesinsert/','App\Http\Controllers\UvicacionesController@createuvicaciones');
+$app->get('uvicaciones','App\Http\Controllers\UvicacionesController@index');
+$app->post('uvicacionesinsert/','App\Http\Controllers\UvicacionesController@createuvicaciones');
